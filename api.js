@@ -208,9 +208,7 @@ function returnId(id) {
 
 //Delete Posts
 
-// deletebutton.addEventListener('click',() => {
-// //    document.getElementById('deletepopup').style.display = 'none';
-// });
+
 tableEle.addEventListener("click", (e) => {
   let target = e.target;
 
