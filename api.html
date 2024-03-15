@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="api.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <p>Restfull Api's</p>
+    </header>
+    <div id="container">
+        <h1>Posts Admin Portal</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione ullam architecto ipsum alias suscipit iste minus earum eligendi culpa corporis expedita quas, impedit hic beatae maiores? Doloribus soluta inventore laboriosam.</p>
+       <button id="addpost">Add Post!</button>
+       <!-- Add Post POPUP -->
+       <div id="addmodal" class="modal">
+        <div>
+            <a href="#" class="close">X</a>
+        </div>
+        <div class="modalcontent">
+            <div class="wrapper">
+                <form style="border:1px solid red;">
+                    <div>
+                        <label>userId</label>
+                        <div><input type="text" id="userId"></div>
+                    </div>
+                    <div>
+                        <label>id</label>
+                        <div><input type="text" id="id"></div>
+                    </div>
+                    <div>
+                        <label>Title</label>
+                        <div><input type="text" id="title"></div>
+                    </div>
+                    <div>
+                        <label>body</label>
+                        <div ><input type="text" style="height:50px;" id="body"></div>
+                    </div>
+                    <button >AddPost</button>
+                    <!-- <button class="close">Cancel</button> -->
+                </form>
+            </div>
+        </div>
+       </div>
+       <!-- Update Post POPUP -->
+       <div id="updatemodal" class="modal">
+        <div>
+            <a href="#" class="close">X</a>
+        </div>
+        <div class="modalcontent">
+            <div class="wrapper">
+                <form style="border:1px solid red;">
+                    <div>
+                        <label>userId</label>
+                        <div><input type="text" id="uuserId"></div>
+                    </div>
+                    <!-- <div>
+                        <label>id</label>
+                        <div><input type="text" id="id"></div>
+                    </div> -->
+                    <div>
+                        <label>Title</label>
+                        <div><input type="text" id="utitle"></div>
+                    </div>
+                    <div>
+                        <label>body</label>
+                        <div ><input type="text" style="height:50px;" id="ubody"></div>
+                    </div>
+                    <button id = 'updatebutton'>Update Post</button>
+                    <!-- <button class="close">Cancel</button> -->
+                </form>
+            </div>
+        </div>
+       </div>
+       <div id ='deletemodal' class="popcontainer">
+        <div class="deletepop" id='deletepopup'>
+            <p>Are you sure you want to delete?</p>
+            <button id="yesbutton">Yes</button> <button id="nobutton">NO</button>
+           </div>
+       </div>
+       
+       <table class="tablesection">
+        <table>
+            <thead>
+                <tr>
+                    <th>userId</th>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>body</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="urlResults">
+                <tr>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>31sunt aut facere repellat provident occaecati excepturi optio reprehenderit</th>
+                    <th>4</th>
+                    <!-- <th style="display:flex;">5</th> -->
+                </tr>
+            </tbody>
+        </table>
+       </table>
+    </div>
+    
+</body>
+<script src="api.js"></script>
+</html>
